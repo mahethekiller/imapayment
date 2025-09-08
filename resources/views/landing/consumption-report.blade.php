@@ -546,7 +546,7 @@
                                                 <tr>
                                                   <td style="text-align: center;">
                                                     <strong style="color:#000000; text-align: center; font-size: 32px;"> Price:
-                                                    <span style="color: red ">{{ $lp->non_member_price }} + GST</span>
+                                                    <span style="color: red ">{{ number_format($lp->non_member_price, 2, '.', ',') }} + GST</span>
                                                       <span class="pricered"></span></strong></td>
                                                 </tr>
                                                 <tr>
@@ -638,7 +638,7 @@
                                                                                               <tbody>
                                                                                                 <tr>
                                                                                                   <td height="55">
-                                                                                                    <span style="color: red; font-size: 32px;">{{ $lp->member_price }} + GST </span>
+                                                                                                    <span style="color: red; font-size: 32px;">{{ number_format($lp->member_price, 2, '.', ',') }} + GST </span>
                                                                                                   </td>
                                                                                                 </tr>
                                                                                               </tbody>
@@ -920,7 +920,7 @@ To check if your company participated and to avail of the special price, <a href
                                         </tr>
                                         <tr>
                                           <td width="100%" height="15" style="font: size 17px; line-height:21px; mso-line-height-rule: exactly;">
-                                            Decoding India's Consumer Markets <strong> is available for sale. </strong>
+                                            {{ $lp->title }} <strong> is available for sale. </strong>
                                             <br>
                                             <strong></strong><br>
                                             <strong>Members of IMA&rsquo;s peer group forums are
