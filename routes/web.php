@@ -7,7 +7,7 @@ use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\PaymentController;
 
-Route::get('/', function(){ return redirect()->route('lp.show','cmo-budget-intelligence-report-2025'); });
+Route::get('/', function(){ return redirect()->route('lp.show','consumption-report'); });
 
 // Route::get('/landing/{slug}', [LandingPageController::class, 'show'])->name('landing.show');
 // Route::post('/landing/{slug}/register', [RegistrationController::class, 'store'])->name('registration.store');
