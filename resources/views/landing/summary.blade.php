@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    @if(!$lp->can_have_extra_members && !empty($data['extra_members']))
+    @if($lp->can_have_extra_members && !empty($data['extra_members']))
         <div class="card p-4 mb-4">
             <h4>Extra Members</h4>
             <ul class="list-group">
@@ -60,7 +60,7 @@
     <div class="card p-4 mb-4">
         <h4>Price Summary</h4>
         <p>Base Price: ₹{{ number_format($basePrice, 2) }}</p>
-        @if(!$lp->can_have_extra_members)
+        @if($lp->can_have_extra_members)
             <p>Extra Members Cost ({{ $extraCount }}): ₹{{ number_format($extraCost, 2) }}</p>
         @endif
         <p>GST ({{ $lp->gst_percent }}%): ₹{{ number_format($gst, 2) }}</p>

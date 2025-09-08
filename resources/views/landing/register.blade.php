@@ -74,7 +74,7 @@
                             </div>
                         </div>
 
-                        @if (!$lp->can_have_extra_members)
+                        @if ($lp->can_have_extra_members)
                             <hr class="my-4">
                             <h4>Extra Members</h4>
                             <div id="extra-members" class="mb-3"></div>
@@ -100,7 +100,7 @@
         // });
     </script>
 
-    @if (!$lp->can_have_extra_members)
+    @if ($lp->can_have_extra_members)
         <script>
             document.getElementById('addExtra').addEventListener('click', function() {
                 const wrapper = document.createElement('div');
