@@ -46,6 +46,13 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('password'),
         ]);
         $member->assignRole($memberRole);
+        $member2 = User::firstOrCreate([
+            'email' => 'imareport@ima-india.com',
+        ], [
+            'name'     => 'Member',
+            'password' => Hash::make('Report@2025'),
+        ]);
+        $member2->assignRole($memberRole);
 
         $editor = User::firstOrCreate([
             'email' => 'editor@example.com',
