@@ -622,7 +622,7 @@
                                                                                                             style="color:#000000; text-align: center; font-size: 32px;">
                                                                                                             Price:
                                                                                                             <span
-                                                                                                                style="color: red ">{{ number_format($lp->non_member_price, 2, '.', ',') }}
+                                                                                                                style="color: red ">{{ number_format($lp->non_member_price, 0, '.', ',') }}
                                                                                                                 +
                                                                                                                 GST</span>
                                                                                                             <span
@@ -779,7 +779,7 @@
                                                                                                                                                                                                     <td
                                                                                                                                                                                                         height="55">
                                                                                                                                                                                                         <span
-                                                                                                                                                                                                            style="color: red; font-size: 32px;">{{ number_format($lp->member_price, 2, '.', ',') }}
+                                                                                                                                                                                                            style="color: red; font-size: 32px;">{{ number_format($lp->member_price, 0, '.', ',') }}
                                                                                                                                                                                                             +
                                                                                                                                                                                                             GST
                                                                                                                                                                                                         </span>
@@ -1015,7 +1015,7 @@ To check if your company participated and to avail of the special price, <a href
                                                                                                 <tr>
                                                                                                     <td style="font-family: Garamond, Helvetica, arial, sans-serif; font-size: 15px; color: #000000; text-align:left;line-height: 20px; font-weight: bold; text"
                                                                                                         st-title="3col-title1">
-                                                                                                        <a href="https://www.ima-india.com/reports/Consumptionreport/ToC%20-%20Decoding%20India%27s%20Consumer%20Markets.pdf"
+                                                                                                        <a href="{{ asset('storage/toc/CMO-Budget-Intelligence-2025-5.pdf') }}"
                                                                                                             style="text-decoration: none; color: #000000;"
                                                                                                             target="_blank">Table
                                                                                                             of
