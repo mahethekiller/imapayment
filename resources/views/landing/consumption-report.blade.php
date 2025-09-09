@@ -546,7 +546,7 @@
                                                 <tr>
                                                   <td style="text-align: center;">
                                                     <strong style="color:#000000; text-align: center; font-size: 32px;"> Price:
-                                                    <span style="color: red ">{{ number_format($lp->non_member_price, 2, '.', ',') }} + GST</span>
+                                                    <span style="color: red ">{{ number_format($lp->non_member_price, 0, '.', ',') }} + GST</span>
                                                       <span class="pricered"></span></strong></td>
                                                 </tr>
                                                 <tr>
@@ -638,7 +638,7 @@
                                                                                               <tbody>
                                                                                                 <tr>
                                                                                                   <td height="55">
-                                                                                                    <span style="color: red; font-size: 32px;">{{ number_format($lp->member_price, 2, '.', ',') }} + GST </span>
+                                                                                                    <span style="color: red; font-size: 32px;">{{ number_format($lp->member_price, 0, '.', ',') }} + GST </span>
                                                                                                   </td>
                                                                                                 </tr>
                                                                                               </tbody>
