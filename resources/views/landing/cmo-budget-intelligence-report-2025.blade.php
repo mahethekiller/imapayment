@@ -1000,7 +1000,7 @@ To check if your company participated and to avail of the special price, <a href
                                                                                                         style="font-size:1px; line-height:1px; mso-line-height-rule: exactly;"
                                                                                                         align="left">
                                                                                                         <a
-                                                                                                            href="{{ asset('storage/toc/ToC-Decoding-Indias-Consumer-Markets.pdf') }}">
+                                                                                                            href="{{ asset('storage/toc/CMO-Budget-Intelligence-2025-5.pdf') }}">
                                                                                                             <img src="{{ asset('storage/img/pdf.png') }}"
                                                                                                                 alt="" /></a>
                                                                                                     </td>
